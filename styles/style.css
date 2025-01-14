@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Melted-Monster';
+    src: url('../fonts/Melted-Monster.ttf') format('truetype')
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 10%;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+nav ul li {
+    color: red;
+    margin: 10px;
+    font-family: 'Melted-Monster', sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+
+body {
+    height: 100vh;
+    background-color: #455952;
+
+}
