@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Raleway', sans-serif;
     background: black;
@@ -259,8 +258,12 @@ nav a:hover {
 @keyframes spin {
   from { transform: translate(-50%, -50%) rotate(0deg); }
   to { transform: translate(-50%, -50%) rotate(360deg); }
+<<<<<<< HEAD
 }
   
 
 
 
+=======
+}    
+>>>>>>> 986ce11042074f4ec7a2460b69213980671203dd
