@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Raleway', sans-serif;
     background: black;
@@ -7,7 +6,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
 
 header {
     display: flex;
@@ -27,7 +25,6 @@ header {
     height: auto;
     filter: drop-shadow(0 0 5px red);
 }
-
 
 nav {
     flex-grow: 1;
@@ -56,7 +53,7 @@ nav a:hover {
     height: 100vh;
     width: 100%;
     text-align: center;
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 .hero h1 {
@@ -88,14 +85,15 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.explore-btn
+.explore-btn:hover,
 .download-button:hover {
     background: darkred;
     box-shadow: 0 0 10px red;
 }
+
 .team-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 100px 40px;
     max-width: 1000px;
@@ -132,6 +130,7 @@ nav a:hover {
     margin: 5px 0 0;
     font-style: italic;
 }
+
 .slider-container {
     margin-top: 100px;
     padding: 60px 30px;
@@ -140,26 +139,26 @@ nav a:hover {
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-  }
-  
-  .slider-container h1 {
+}
+
+.slider-container h1 {
     font-family: 'Cinzel', serif;
     font-size: 36px;
     margin-bottom: 40px;
     color: #ff0000;
     text-shadow: 0 0 10px red;
-  }
-  
-  .slider {
+}
+
+.slider {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
-  }
-  
-  .slide {
+}
+
+.slide {
     display: none;
     position: relative;
-    background-color: #111; /* fond sombre */
+    background-color: #111;
     color: #e0e0e0;
     padding: 50px;
     border-radius: 20px;
@@ -169,33 +168,33 @@ nav a:hover {
     outline: 6px double #8b0000;
     overflow: hidden;
 }
-  
-  .slide.active {
+
+.slide.active {
     display: block;
     animation: fadeIn 0.5s ease-in-out;
-  }
-  
-  .slide h2 {
+}
+
+.slide h2 {
     font-family: 'Cinzel', serif;
     color: #b30000;
     margin-bottom: 20px;
     font-size: 28px;
-  }
-  
-  .slide p {
+}
+
+.slide p {
     font-size: 18px;
     line-height: 1.7;
-    color: #ccc; 
+    color: #ccc;
 }
-  
-  .slider-nav {
+
+.slider-nav {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .slider-nav button {
+}
+
+.slider-nav button {
     background: red;
     border: none;
     padding: 12px 20px;
@@ -205,17 +204,24 @@ nav a:hover {
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s;
-  }
-  
-  .slider-nav button:hover {
+}
+
+.slider-nav button:hover {
     background: darkred;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .logo-group {
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo-group {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -234,33 +240,32 @@ nav a:hover {
 }
 
 .slide::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 300px;
-  background-image: url("images/logo-lrmh.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.05;
-  transform: translate(-50%, -50%);
-  animation: spin 60s linear infinite;
-  z-index: 0;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url("images/logo-lrmh.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    transform: translate(-50%, -50%);
+    animation: spin 60s linear infinite;
+    z-index: 0;
 }
 
 .slide * {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
-
 
 @keyframes spin {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
-  
-
-
-
