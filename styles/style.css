@@ -269,3 +269,47 @@ nav a:hover {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+.soutenance-section {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.soutenance-section button {
+  background: red;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-family: 'Cinzel', serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.soutenance-section button:hover {
+  background: darkred;
+}
+
+.rapport-list {
+  margin-top: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rapport-list.visible {
+  display: flex;
+}
+
+.rapport-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.rapport-list a:hover {
+  color: red;
+  text-shadow: 0 0 5px red;
+}

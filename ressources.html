@@ -23,9 +23,18 @@
 
     <main class="hero">
         <h1>Ressources</h1>
-        <p>Les différents rapports de nos soutenances seront bientôt disponibles ici
-            <br>Restez à l’écoute pour plus d’informations !</p>
-        </p>
+
+        <section class="soutenance-section">
+            <button onclick="document.getElementById('rapport-list').classList.toggle('visible')">
+                📄 Voir les rapports de soutenance
+            </button>
+            <div id="rapport-list" class="rapport-list hidden">
+                <a href="documents/rapport_final_LRMH.pdf" target="_blank">Rapport final – Mai 2025</a>
+                <a href="documents/rapport-soutenance-mars.pdf" target="_blank">Rapport de soutenance – Mars 2025</a>
+                <a href="documents/rapport-soutenance-janvier.pdf" target="_blank">Rapport de soutenance – Janvier 2025</a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
+
